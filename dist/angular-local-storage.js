@@ -1,6 +1,6 @@
 /**
  * An Angular module that gives you access to the browsers local storage
- * @version v0.2.0 - 2015-05-10
+ * @version v0.2.0 - 2015-05-15
  * @link https://github.com/grevory/angular-local-storage
  * @author grevory <greg@gregpike.ca>
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -8,6 +8,11 @@
 (function ( window, angular, undefined ) {
 /*jshint globalstrict:true*/
 'use strict';
+
+/* commonjs package manager support (eg componentjs) */
+if (typeof module !== "undefined" && typeof exports !== "undefined" && module.exports === exports){
+  module.exports = 'LocalStorageModule';
+}
 
 var isDefined = angular.isDefined,
   isUndefined = angular.isUndefined,

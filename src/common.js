@@ -1,6 +1,11 @@
 /*jshint globalstrict:true*/
 'use strict';
 
+/* commonjs package manager support (eg componentjs) */
+if (typeof module !== "undefined" && typeof exports !== "undefined" && module.exports === exports){
+  module.exports = 'LocalStorageModule';
+}
+
 var isDefined = angular.isDefined,
   isUndefined = angular.isUndefined,
   isNumber = angular.isNumber,
